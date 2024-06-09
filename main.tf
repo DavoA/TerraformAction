@@ -16,8 +16,8 @@ resource "aws_instance" "in-pub" {
   user_data     = <<-EOF
     #!/bin/bash
     sudo apt update
-    sudo apt install git
-    sudo apt install python3.11
+    sudo apt install -y git
+    sudo apt install -y python3.11
     git clone ${var.url}
     cd PythonSimple
     python calculate.py
