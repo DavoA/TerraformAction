@@ -11,7 +11,7 @@ variable "url" {
 }
 
 resource "aws_instance" "in-pub" {
-  ami           = "ami-00beae93a2d981137"
+  ami           = "ami-0ca2e925753ca2fb4"
   instance_type = "t2.micro"
   user_data     = <<-EOF
     #!/bin/bash
